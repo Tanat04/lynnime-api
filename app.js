@@ -17,14 +17,18 @@ mongoose
 // Ensure the schema matches the structure of your document.
 const AnimeSchema = new mongoose.Schema({
   anime_id: Number,
-  name: String,
+  title: String,
+  synopsis: String,
   genre: [String],
-  type: String,
+  aired: String,
   episodes: Number,
-  rating: Number,
   members: Number,
+  popularity: Number,
+  ranked: Number,
+  score: Number,
+  img_url: String,
+  link: String,
 });
-
 // Create a model based on the schema
 // The first parameter should match the name of your collection.
 // Mongoose automatically looks for the plural, lowercase version of your model name.
