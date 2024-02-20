@@ -39,7 +39,7 @@ app.get("/anime", async (req, res) => {
     res.json(anime);
   } catch (err) {
     console.error(err);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("Internal Server Error!");
   }
 });
 
